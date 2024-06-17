@@ -3,6 +3,7 @@ from turtle import Turtle, Screen
 the_turtle = Turtle()
 the_turtle.shape('turtle')
 the_turtle.color('green')
+the_turtle.pensize(10)
 
 def designer():
     the_turtle.speed(10)
@@ -31,17 +32,9 @@ def designer():
         the_turtle.left(90)
 
 
-
-def lado_direito():
-    designer()
-
-def lado_esquerdo():
-    the_turtle.left(180)
-    designer()
-    
-
-lado_direito()
-lado_esquerdo()
+designer()
+the_turtle.left(180)
+designer()
 
 screen = Screen()
 screen.exitonclick()
